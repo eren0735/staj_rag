@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeni Blog Ekle</title>
+</head>
+<body>
+    <h1>Yeni Blog Ekle</h1>
+    <form id="addBlogForm" action="/add" method="POST">
+        <label for="blog_name">Blog Adı:</label>
+        <input type="text" id="blog_name" name="blog_name" required><br><br>
+
+        <label for="context">Blog İçeriği:</label>
+        <textarea id="context" name="context" rows="4" required></textarea><br><br>
+
+        <label for="author">Yazar:</label>
+        <input type="text" id="author" name="author" required><br><br>
+
+        <input type="submit" value="Blogu Ekle">
+    </form>
+</body>
+</html>

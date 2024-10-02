@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arama Sonuçları</title>
+</head>
+<body>
+    <h1>Arama Sonuçları</h1>
+    <form action="/search" method="get">
+        <input type="text" name="query" placeholder="Arama yap..." required>
+        <button type="submit">Ara</button>
+    </form>
+    <ul>
+        {% for result in results %}
+            <li>{{ result.id }}: {{ result.embedding }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
